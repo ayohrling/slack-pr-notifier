@@ -1,0 +1,20 @@
+{
+  "name": "slack-pr-notifier",
+  "version": "1.0.0",
+  "description": "Slack notifications for Jenkins Github PR Builder plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "slack",
+    "github"
+  ],
+  "author": "Kyle Lilly <kyle@immuta.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "hapi": "^11.1.2",
+    "slackbots": "KyleLilly/slack-bot-api"
+  }
+}
