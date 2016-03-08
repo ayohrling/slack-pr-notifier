@@ -4,7 +4,9 @@ var crypto = require('crypto');
 var extraMappings = require('./mappings');
 
 var server = new Hapi.Server();
-server.connection({ host: "0.0.0.0", port: 8004 });
+var listenAddress = process.env.LISTEN || "0.0.0.0"
+var listenPort = process.env.PORT || 8004
+server.connection({ host: listenAddress, port: listenPort });
 
 // create a bot
 var bot = new SlackBot({
